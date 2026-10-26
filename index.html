@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>水浒 · 弈阵</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    width: 100%; height: 100%;
+    background: #06060a;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", sans-serif;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  canvas {
+    display: block;
+    background: #000;
+    box-shadow: 0 0 60px rgba(180, 40, 40, 0.35),
+                0 0 120px rgba(80, 10, 10, 0.25);
+    border-radius: 4px;
+    cursor: default;
+  }
+</style>
+</head>
+<body>
+<canvas id="game" width="960" height="540"></canvas>
+
+<!-- 数据层 -->
+<script src="js/data_chars.js"></script>
+<script src="js/data_traits.js"></script>
+<script src="js/data_terrain.js"></script> 
+<script src="js/data_equips.js"></script>
+
+<!-- 核心层 -->
+<script src="js/core.js"></script>
+<script src="js/render.js"></script>
+
+<!-- 逻辑层 -->
+<script src="js/ai.js"></script>
+<script src="js/battle.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/game.js"></script>
+</body>
+</html>
